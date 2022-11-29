@@ -1,0 +1,14 @@
+---
+title: "Introduction to R and Shiny"
+author: "Renato A. Correa dos Santos"
+date: "2022-11-29"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction to R and Shiny
+
+

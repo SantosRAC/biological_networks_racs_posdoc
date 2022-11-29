@@ -1,0 +1,60 @@
+---
+title: "Introduction to network models"
+author: "Renato A. Correa dos Santos"
+date: "2022-11-29"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction to network models
+
+Theory (slides):
+
+* Reductionism
+* Holism
+* Complex systems
+* Brief history of graphs
+  * e.g., Euler and the Königsberg’s bridge paradigm
+  * e.g., Kochen and Pool and the structure of human society
+  * e.g., Erdos and Rényi and the "Small World" effect
+  * e.g., Barabási and Albert and the "Scale-free" graphs
+* Network definition
+* Classification of networks
+  * Directed and undirected
+  * Weighted and unweighted
+  * Cyclic and acyclic ?
+  * Uni-, bi-partite ?
+  * 
+* R tools for network analysis
+  * [statnet suite](https://statnet.org/) and its [packages](https://statnet.org/packages/)
+  * [igraph package](https://github.com/igraph/igraph)
+  * [tidygraph package](https://github.com/thomasp85/tidygraph)
+  * [ggraph package](https://github.com/thomasp85/ggraph)
+
+## Practical session on network models
+
+### File representation of networks
+
+* Adjacency matrix
+* Edge list
+* Node list
+
+```{r}
+
+```
+
+
+
+### Overview of all functions used in this practical session
+
+
+
+## Bibliography
+
+* [Interesting post "Network Analysis with R" by Jesse Sadler](https://www.jessesadler.com/post/network-analysis-with-r/)
