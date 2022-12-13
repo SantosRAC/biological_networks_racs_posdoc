@@ -26,11 +26,28 @@ Theory (slides):
   * e.g., Barabási and Albert and the "Scale-free" graphs
 * Network definition
 * Classification of networks
-  * Directed and undirected
-  * Weighted and unweighted
+  * Nature of ties: directed and undirected
+  * Ties can be binary (unweighted) and have an associated value (weighted)
   * Cyclic and acyclic ?
-  * Uni-, bi-partite ?
-  * 
+  * Types of nodes: Unipartite (monopartite or one-mode), bipartite (two-mode)
+  * Multi-edge
+  * Tree: acyclic undirected graph
+  * Connected graph: there is a path from any point to any other point
+  * Complete graph: every pair of distinct vertices is connected by a unique edge
+  * Cluster: graph formed from the disjoint union of complete graphs
+  * Clique: subset of vertices such that every pair is connected
+* Network properties and metrics
+  * Degree: total number of edges adjancent to a vertex
+  * Density: ratio between number of edge and the possible number of edges in the same graph (density allows to classify graphs in dense and sparse)
+  * Clustering coefficient: 
+  * Matching index: 
+  * Distance: length of the shortest path between given nodes
+  * Network centrality: 
+    * Closeness centrality:
+    * Betweenness centrality: 
+    * Eccentricity centrality:
+  * Motifs: repeated graphlets (small subgraphs of a larger network)
+    * 
 * R tools for network analysis
   * [statnet suite](https://statnet.org/) and its [packages](https://statnet.org/packages/)
   * [igraph package](https://github.com/igraph/igraph)
@@ -39,22 +56,77 @@ Theory (slides):
 
 ## Practical session on network models
 
+### Data structures
+
+
+
+#### Creating a first network in R
+
+First test ...
+
+```{r}
+#install.packages("tidyverse")
+library(tidyverse)
+
+# Molecules in Fig.3A of Amores and Martínez-Antonio (2022)
+edge_list <- tibble(from = c("molecule1", "molecule1", "molecule2", "molecule2"), to = c("molecule2", "molecule4", "molecule3", "molecule4"))
+edge_list
+```
+
+Creating an undirected network:
+
+```{r}
+#install.packages("network")
+library(network)
+molecules_network <- network(edge_list,
+                             directed = FALSE)
+molecules_network
+```
+
+#### Edge list
+
+
+
 ### File representation of networks
+
+There are several ways we can store network information in files.
 
 * Adjacency matrix
 * Edge list
 * Node list
 
-```{r}
+#### Importing files
 
-```
+
+### Network properties
+
+#### Network centralities
+
+* Degree centrality
+
+* Closeness centrality
+* Betweenness centrality 
+* Eccentricity centrality
+
+
+
+
+
+
+
+### Modelling
+
 
 
 
 ### Overview of all functions used in this practical session
 
-
+* Tidyverse
+* network
+* 
 
 ## Bibliography
 
 * [Interesting post "Network Analysis with R" by Jesse Sadler](https://www.jessesadler.com/post/network-analysis-with-r/)
+* [Amores and Martínez-Antonio, 2022](https://doi.org/10.1007/s10142-022-00907-y)
+* [Koutrouli et al. 2020](https://www.frontiersin.org/articles/10.3389/fbioe.2020.00034/full)
