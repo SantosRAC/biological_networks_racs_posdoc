@@ -1,0 +1,28 @@
+---
+title: "Clustering Networks"
+author: "Renato A. Correa dos Santos"
+date: "2022-12-12"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 2
+---
+
+## Introduction to methods for clustering networks
+
+Theory (slides):
+
+* Graph-based methods
+* Hierarchical clustering methods
+
+## Practical session
+
+
+
+### Overview of all functions used in this practical session
+
+* 
+
+## Bibliography
+
+* [Koutrouli et al. (2020)](https://www.frontiersin.org/articles/10.3389/fbioe.2020.00034/full) (this paper has a provides a brief summary in two sections)
