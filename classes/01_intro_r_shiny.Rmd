@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R and Shiny"
 author: "Renato A. Correa dos Santos"
-date: "2022-11-29"
+date: "2022-12-12"
 output: pdf_document
 ---
 
@@ -9,6 +9,109 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Introduction to R and Shiny
+## Introduction to R, Markdown, and Shiny
+
+### R
+
+#### Why R?
+
+R was released in the early 1990s by Ross Ihaka and Robert Gentleman, in Australia, as part of the Open Source movement.
+
+* Powerful for data analysis and graphical tools
+* Free
+* Availability of libraries
+
+#### Variables
 
 
+
+#### Basic R data types
+
+##### Characters (non-numeric values)
+
+Characters represent textual information, or strings (this is how we can textual information in Python, for example).
+
+Characters could be used as categorical variables; however, R (as a language strongly used in statistics) has the `factor` data structure that is more suitable for this purpose.
+
+```{r}
+# Creating a string
+sentence  <- "I love Systems Biology"
+sentence
+```
+
+Let's see what we could do with characters.
+
+```{r}
+
+```
+
+##### Numeric (real or decimal)
+
+
+
+##### Integer
+
+
+
+##### Logical (non-numeric values)
+
+
+
+##### Complex
+
+
+
+
+#### Basic R data structures
+
+##### Vectors
+
+
+
+##### Matrices
+
+
+
+##### Lists
+
+
+
+##### Data frames
+
+
+
+##### Factors
+
+Depending on the reference, it can be considered as an R data type (e.g. The Book of R by TM Davies)
+
+
+#### Reading and writing files
+
+I science, we usually have tabulated text files or Excel spreasheets that we use for data analysis. We can import these files into R as well. In our course, we are also going to import files that store network information.
+
+To read files, we can use:
+
+* `read.csv` to read a file with comma-separated values
+* `read.table` to read a file with tabulation-separeted values
+
+As mentioned in [here](http://swcarpentry.github.io/r-novice-inflammation/11-supp-read-write-csv/), there are libraries specific for handling Excel spreadsheets. However, we are going to use only CSV and TSV files in this course. 
+
+Eventually, we may want to write data into a file.
+
+* `write.csv`
+
+#### Plotting
+
+
+
+
+### RMarkdown
+
+
+
+### Shiny
+
+
+## Bibliography
+
+* [Programming with R (Software Carpentry Lesson)](http://swcarpentry.github.io/r-novice-inflammation/)
